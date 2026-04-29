@@ -1,0 +1,23 @@
+{
+  "name": "study-planner",
+  "description": "英語学習プランナー。目標設定、練習プラン作成、セッション管理、進捗レビューを行う。",
+  "prompt": "file://./study-planner-prompt.md",
+  "tools": ["*"],
+  "allowedTools": [
+    "read",
+    "write",
+    "shell",
+    "knowledge",
+    "glob",
+    "grep"
+  ],
+  "resources": [
+    "file://data/profile.yaml",
+    "file://data/preferences.yaml",
+    "file://data/plan.yaml",
+    "file://data/progress.yaml",
+    "skill://.kiro/skills/**/SKILL.md"
+  ],
+  "keyboardShortcut": "ctrl+s",
+  "welcomeMessage": "📚 英語学習プランナーです。今日の練習を始めましょう！"
+}
