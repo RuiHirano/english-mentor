@@ -15,4 +15,4 @@ else
 fi
 
 # Launch kiro with study-planner agent
-exec kiro chat --agent study-planner
+exec kiro-cli chat --agent study-planner
