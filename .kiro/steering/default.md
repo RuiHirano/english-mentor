@@ -9,6 +9,7 @@
 | スキル名 | ディレクトリ | 概要 |
 |---|---|---|
 | free-conversation | `.kiro/skills/free-conversation/SKILL.md` | 英語メンターとの自由英会話・添削 |
+| calan-method | `.kiro/skills/calan-method/SKILL.md` | カランメソッドの反復Q&Aドリル |
 | instant-translation | `.kiro/skills/instant-translation/SKILL.md` | 日本語→英語の瞬間英作文 |
 | dictation-practice | `.kiro/skills/dictation-practice/SKILL.md` | 英文の聞き取りディクテーション |
 | vocabulary-builder | `.kiro/skills/vocabulary-builder/SKILL.md` | 文脈付き語彙トレーニング |
