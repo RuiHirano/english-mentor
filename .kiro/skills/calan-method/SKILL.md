@@ -25,6 +25,11 @@ calan_drill "Question?" "Answer." [待機秒数]
 
 各問題ごとに必ずこのスクリプトを呼び出すこと。テキストだけで進めてはいけない。
 
+**重要**: `calan_drill` の引数に渡す question と answer は **1回分のみ** 書くこと。スクリプト内で2回繰り返すため、引数に同じ文を重複させると4回読み上げられてしまう。
+
+❌ 悪い例: `calan_drill "What is this? What is this?" "It is a pen. It is a pen." 1`
+✅ 良い例: `calan_drill "What is this?" "It is a pen." 1`
+
 ### 実行例
 
 ```bash
@@ -38,6 +43,32 @@ calan_drill "Is this a book?" "Yes, it is a book." 5
 - 1セッション10問を目安に出題
 - 同じ文型を少しずつ変えながら繰り返す（カランの核心）
 - 肯定・否定・疑問の3パターンをローテーションする
+
+### 出題フォーマット
+
+各問題を出す前に、状況を絵文字で視覚的に表示してからドリルを実行する。
+
+```
+【状況】
+🧑 ➡️ 📚
+"Is this a book?"
+```
+
+絵文字図のルール:
+- 登場人物・物・場所を絵文字で表現する
+- 矢印（➡️ 👉 ）で関係や動作を示す
+- 1〜2行に収める（シンプルに）
+- 状況が一目でわかるように工夫する
+
+絵文字図の例:
+| 問題 | 絵文字図 |
+|---|---|
+| Is this a book? | 🧑 ➡️ 📚 |
+| Is she running? | 🏃‍♀️ 💨 |
+| Is he taller than her? | 👨 📏 👩 |
+| Are they in the office? | 👥 🏢 |
+| Did she eat lunch? | 👩 🍱 ✅ |
+| Is the cat on the table? | 🐱 📦 ⬆️ |
 
 ### 文型ローテーション例
 
